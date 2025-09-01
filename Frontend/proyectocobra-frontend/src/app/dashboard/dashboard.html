@@ -1,0 +1,16 @@
+<header class="header">
+  <h1>Proyecto Cobra</h1>
+  <nav>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+    <!-- Más enlaces cuando tengas otras páginas -->
+  </nav>
+</header>
+
+<main class="contenido">
+  <!-- Si no hay rutas hijas aún, el router-outlet no mostrará nada (está bien) -->
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  © {{ currentYear }} Proyecto Cobra
+</footer>

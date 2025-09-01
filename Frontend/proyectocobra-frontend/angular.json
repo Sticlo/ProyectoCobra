@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "proyectocobra": {
+    "proyectocobra-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "proyectocobra:build:production"
+              "buildTarget": "proyectocobra-frontend:build:production"
             },
             "development": {
-              "buildTarget": "proyectocobra:build:development"
+              "buildTarget": "proyectocobra-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -93,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
